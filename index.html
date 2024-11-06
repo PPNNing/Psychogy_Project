@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Experiment</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        #container { display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; }
+        #startButton, #nextButton, #restartButton { font-size: 20px; padding: 10px 20px; margin-top: 20px; cursor: pointer; }
+        #instruction, #countdown, #experiment, #endMessage { display: none; }
+        img { width: 300px; height: auto; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="instruction">
+            <h2>Welcome to the Experiment</h2>
+            <p>In this experiment, there will be three colors of dots. Your task is to select the color you think has the most dots.</p>
+            <button id="startButton">Start Experiment</button>
+        </div>
+        <div id="countdown">
+            <h3>Test will start in <span id="timer">5</span> seconds</h3>
+        </div>
+        <div id="experiment">
+            <img id="stimulus" src="" alt="Stimulus">
+            <p>Select the color with most dots:</p>
+            <button id="choice1">Red</button>
+            <button id="choice2">Blue</button>
+            <button id="choice3">Green</button>
+        </div>
+        <div id="endMessage">
+            <h2>Thank you for participating!</h2>
+            <button id="restartButton">Restart Experiment</button>
+        </div>
+    </div>
+    <script src="experiment.js"></script>
+</body>
+</html>
