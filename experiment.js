@@ -1,5 +1,3 @@
-console.log("JavaScript loaded successfully!");
-
 document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.getElementById("startButton");
     const restartButton = document.getElementById("restartButton");
@@ -20,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "Image/image_4.png", "Image/image_5.png", "Image/image_6.png", 
         "Image/image_7.png", "Image/image_8.png", "Image/image_9.png", "Image/image_10.png"
     ];
+
+    // 初始显示“instruction”阶段
+    instructionContainer.style.display = "block";
 
     // Start Experiment
     startButton.addEventListener("click", () => {
@@ -95,5 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reset experiment data
     function resetExperiment() {
         reactionTimes = [];
+        currentStimulusIndex = 0;
     }
 });
+
