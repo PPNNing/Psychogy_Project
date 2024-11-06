@@ -1,3 +1,5 @@
+console.log("JavaScript loaded successfully!");
+
 document.addEventListener("DOMContentLoaded", () => {
     const startButton = document.getElementById("startButton");
     const restartButton = document.getElementById("restartButton");
